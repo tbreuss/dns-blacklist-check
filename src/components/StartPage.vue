@@ -46,7 +46,7 @@ export default {
     run: function () {
       this.reset()
 
-      var streamUrl = 'http://localhost:9090/index.php' + '?ip=' + encodeURIComponent(this.msg)
+      var streamUrl = process.env.API_URL + '?ip=' + encodeURIComponent(this.msg)
 
       evtSource = new EventSource(streamUrl)
       this.loading = true
