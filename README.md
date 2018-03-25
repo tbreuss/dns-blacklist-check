@@ -2,6 +2,14 @@
 
 > A Vue.js project
 
+## Start
+
+Start the internal PHP server with port 9090 and the client with port 8080.
+
+~~~
+npm run start
+~~~
+
 ## Build Setup
 
 ``` bash

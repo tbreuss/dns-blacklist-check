@@ -1,8 +1,14 @@
 <template>
   <div class="start-page">
+    <h1 class="cover-heading">Are you Blacklisted?</h1>
+    <p class="lead">We will test your server domain or IP address against over 57 DNS based email blacklists.</p>
     <form v-on:submit.prevent="run">
-      <input v-model="msg" type="text" placeholder="Enter message"/>
-      <button v-on:click="run" type="button">{{ buttonLabel }}</button>
+      <div class="input-group input-group-lg">
+        <input v-model="msg" type="text" class="form-control" placeholder="Server domain or IP address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button v-on:click="run" type="button" class="btn btn-danger">{{ buttonLabel }}</button>
+        </div>
+      </div>
     </form>
     <div v-if="total_items>-1">
       <p>{{ items.length }} of {{ total_items }} dnsbl-server</p>
@@ -39,7 +45,7 @@ export default {
   },
   computed: {
     buttonLabel: function () {
-      return (this.loading ? 'Loading…' : 'Go')
+      return (this.loading ? 'Testing...' : 'Test')
     }
   },
   methods: {
