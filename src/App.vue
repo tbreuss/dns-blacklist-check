@@ -3,12 +3,13 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
+          <h3 class="masthead-brand">Blacklist Check</h3>
+          <!-- nav class="nav nav-masthead justify-content-center">
+            <router-link class="nav-link" to="/">Home</router-link>
             <a class="nav-link" href="#">Features</a>
             <a class="nav-link" href="#">Contact</a>
-          </nav>
+            <router-link class="nav-link" to="/about">About</router-link>
+          </nav -->
         </div>
       </header>
       <main role="main" class="inner cover">
@@ -16,7 +17,7 @@
       </main>
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Made by <a href="https://www.tebe.ch">tebe</a>.</p>
+          <p>A tiny <a href="https://www.tebe.ch">tebe.ch</a> project</p>
         </div>
       </footer>
     </div>

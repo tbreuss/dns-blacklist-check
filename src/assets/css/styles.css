@@ -115,3 +115,14 @@ body {
   height: 100%;
   overflow: auto;
 }
+
+footer a {
+  color:rgba(255, 255, 255, .5);
+  text-decoration: underline;
+}
+.cover {
+  margin: 3rem 0;
+}
+.masthead-brand {
+  float: none;
+}
