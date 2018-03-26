@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
     /*@import './assets/scss/custom-bootstrap.scss';
     @import '../node_modules/bootstrap/scss/bootstrap.scss';*/
 </style>
