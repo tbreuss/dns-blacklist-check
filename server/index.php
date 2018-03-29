@@ -111,7 +111,6 @@ flush();
 $reverse_ip = implode(".", array_reverse(explode(".", $ip)));
 
 foreach ($dnsbl_lookup as $i => $host) {
-    usleep(50000);
     $dnsr = $reverse_ip . "." . $host . ".";
     $time_start = microtime(true);
     if (checkdnsrr($dnsr, "A")) {

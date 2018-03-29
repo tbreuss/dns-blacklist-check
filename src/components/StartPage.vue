@@ -4,7 +4,7 @@
     <p class="lead">We will test your server domain or IP address against over 57 DNS based email blacklists.</p>
     <form v-on:submit.prevent="run">
       <div class="input-group input-group-lg">
-        <input v-model="msg" type="text" class="form-control" placeholder="Server domain or IP address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input v-model="msg" type="text" class="form-control" placeholder="Server domain or IP address" aria-label="Recipient's username" aria-describedby="basic-addon2" autofocus>
         <div class="input-group-append">
           <button v-on:click="run" type="button" class="btn btn-danger">{{ buttonLabel }}</button>
         </div>
@@ -26,7 +26,6 @@
         </tr>
       </table>
     </div>
-
     <!--
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
@@ -63,7 +62,7 @@ export default {
   name: 'StartPage',
   data () {
     return {
-      msg: '94.16.152.175',
+      msg: '',
       actual_msg: '',
       total_items: -1,
       items: [],
