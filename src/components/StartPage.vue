@@ -78,7 +78,7 @@ export default {
     run: function () {
       this.reset()
 
-      var streamUrl = process.env.API_URL + '?ip=' + encodeURIComponent(this.msg)
+      var streamUrl = process.env.VUE_APP_API_URL + '?ip=' + encodeURIComponent(this.msg)
 
       evtSource = new EventSource(streamUrl)
       this.loading = true
@@ -96,7 +96,7 @@ export default {
         that.items.push(item)
       }, false)
 
-      evtSource.addEventListener('close', function (e) {
+      evtSource.addEventListener('close', function () {
         evtSource.close()
         that.loading = false
       }, false)

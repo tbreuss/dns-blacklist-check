@@ -31,11 +31,6 @@ export default {
 </script>
 
 <style>
-    /*@import './assets/scss/custom-bootstrap.scss';
-    @import '../node_modules/bootstrap/scss/bootstrap.scss';*/
-</style>
-
-<style>
   @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-  @import './assets/css/styles.css'
+  @import './assets/css/styles.css';
 </style>
