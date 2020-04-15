@@ -1,15 +1,22 @@
 # DNS Blacklist Check
 
-DNSBL is a simple demo project using Vue.js and Server Sent Events (SSE). 
+DNSBL is a simple demo project using Vue.js and Server Sent Events (SSE).
 It checks if the given IP address or hostname is blacklisted on the configured dnsbl servers.
 
 ![Screenshot](screenshot.png)
 
+## Prerequisites
+
+- PHP >= 5.6
+- Node & NMP
 
 ## Install
 
-To follow.
-
+~~~bash
+git clone https://github.com/tbreuss/dns-blacklist-check.git
+cd dns-blacklist-check
+npm install
+~~~
 
 ## Start
 
@@ -18,7 +25,6 @@ Start the internal PHP server with port 9090 and the client with port 8080.
 ~~~
 npm run start
 ~~~
-
 
 ## Demo
 
