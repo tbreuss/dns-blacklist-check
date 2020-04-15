@@ -20,7 +20,7 @@ npm install
 
 ## Start
 
-Start the internal PHP server with port 9090 and the client with port 8080.
+Start the internal PHP server with port 9090 and the client with port 8081.
 
 ~~~
 npm run start
