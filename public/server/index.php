@@ -100,8 +100,8 @@ header('Content-Type: text/event-stream; charset=UTF-8');
 
 echo dataToStreamEvent
 (
-    'header', 
-    ['total_items' => $repeat, 'msg' => $msg]
+    'header',
+    ['totalItems' => $repeat, 'msg' => $msg]
 );
 flush();
 
@@ -123,15 +123,15 @@ foreach ($dnsbl_lookup as $i => $host) {
     $time = ($time >= 1.0) ? round($time, 2) . 's' : round($time * 1000, 2) . 'ms';
 
     echo dataToStreamEvent(
-        'item', 
+        'item',
         [
-            'cnt' => $i+1, 
+            'cnt' => $i+1,
             'host' => $host,
             'listed' => $listed,
             'time' => $time,
         ]
-    );    
-    flush();    
+    );
+    flush();
 }
 
 // Tell client to close the connection
